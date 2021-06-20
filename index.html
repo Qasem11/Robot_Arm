@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Control Robot Arm</title>
+</head>
+
+<body>
+
+    <form class="controlArm" action="./includes/controlArm.php" method="POST" name="controls">
+        <h1>Control</h1>
+        <div class="field">
+            <label for="control1">control1</label>
+            <input type="range" name="control1" min="0" max="180">
+            <span id="control1range">90</span>
+        </div>
+        <div class="field">
+            <label for="control2">control2</label>
+            <input type="range" name="control2" min="0" max="180">
+            <span id="control2range">90</span>
+        </div>
+        <div class="field">
+            <label for="control3">control3</label>
+            <input type="range" name="control3" min="0" max="180">
+            <span id="control3range">90</span>
+        </div>
+        <div class="field">
+            <label for="control4">control4</label>
+            <input type="range" name="control4" min="0" max="180">
+            <span id="control4range">90</span>
+        </div>
+        <div class="field">
+            <label for="control5">control5</label>
+            <input type="range" name="control5" min="0" max="180">
+            <span id="control5range">90</span>
+        </div>
+        <div class="field">
+            <label for="control6">control6</label>
+            <input type="range" name="control6" min="0" max="180">
+            <span id="control6range">90</span>
+        </div>
+        <div class="field">
+            
+            <label class="switch">
+                <input type="checkbox" name="running" value="1">
+                <span class="slider"></span>
+              </label>
+             
+        </div>
+        <div class="field">
+            <button id="save" type="submit">Save</button>
+        </div>
+        <!-- <h3 id="showData">Show data</h3> -->
+        <a href="./includes/retrieve.php">Show Data</a>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
